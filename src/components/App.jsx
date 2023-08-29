@@ -15,7 +15,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       people: [],
-      personToOrderFor: {},
       snackOrders: {
         "Luke Skywalker": "Lay's BBQ",
         "C-3PO": "Red Hots",
@@ -36,7 +35,6 @@ class App extends React.Component {
   }
 
   orderSnack = (personName, snackName) => {
-    alert(personName + " ordered " + snackName)
     this.setState({
       snackOrders: {
         ...this.state.snackOrders,
@@ -45,27 +43,22 @@ class App extends React.Component {
     })
   }
 
-  selectPerson = (person) => {
-    this.setState({
-      personToOrderFor: person
-    });
-  }
 
   render() {
     return (
       <main>
-        <PeopleList people={this.state.people} selectPerson={this.selectPerson} />
+        <PeopleList people={{}} />
 
-        <SnackOrders
-          people={this.state.people}
-          snackOrders={this.state.snackOrders}
-        />
+        {/* <SnackOrders
+          people={{}}
+          snackOrders={{}}
+        /> */}
 
-        <SnackShack
+        {/* <SnackShack
           personName={this.state.personToOrderFor.name}
           snackOrders={this.state.snackOrders}
           orderSnack={this.orderSnack}
-        />
+        /> */}
       </main >
     )
   }
