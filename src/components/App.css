@@ -1,0 +1,36 @@
+main {
+}
+
+.name-list {
+  padding: 0 .5em 2em;
+  border: solid pink;
+}
+
+.name-list li {
+  display: inline-block;
+  margin: 0 .5em;
+  padding: 0 .25em;
+  border: solid pink;
+}
+
+.snack-person-list {
+  padding: 0 .25em;
+  border: solid red;
+}
+
+.snack-person-list li {
+  color: brown;
+  text-decoration: underline;
+}
+
+.snack-shack {
+  padding: 0 .25em 2em;
+  border: dashed red;
+}
+
+.snack-shack li {
+  display: inline-block;
+  margin: .1em .5em;
+  padding: 0 .25em;
+  border: solid red;
+}
